@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+     <div class="container-fluid" id="navbar">
+    <nav class="navbar navbar-expand-lg sticky-top p-0  shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="Logo" width="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link ms-3" href="main.html">Главная</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-3" href="main.html" role="button" data-bs-toggle="dropdown">
+                            О нас
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#about">О нас</a></li>
+                            <li><a class="dropdown-item" href="team.html">Наша команда</a></li>
+                            <li><a class="dropdown-item" href="#partners">Наши партнеры</a></li>
+                            <li><a class="dropdown-item" href="teh.html">Технологии</a></li>
+                            <li><a class="dropdown-item" href="news.html">Новости</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link ms-3" href="service.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link ms-3" href="contact.html">Контакты</a></li>
+                </ul>
+
+                <div class="search-container">
+                    <form class="d-flex search-form">
+                        <input class="form-control search-input" type="search" placeholder="Поиск..." aria-label="Search">
+                         <button class="btn btn-outline-primary search-toggle">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    </form>
+                </div>
+
+                <a href="#" class="btn btn-outline-primary ms-3 login-btn" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                    <i class="bi bi-person-circle"></i> Личный кабинет
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <main>
+        <div class="container mt-5">
+            <h2 class="section-title">Обновления и новые возможности  DRC</h2>
+        
+            <div class="row gy-4 p-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news1.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Теперь у вас есть персональный кабинет!</h5>
+                            <p class="text-muted">Личный кабинет позволяет отслеживать прогресс реабилитации, получать персональные рекомендации и связываться с врачами онлайн.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news2.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Rehab теперь в вашем смартфоне!</h5>
+                            <p class="text-muted">Запускаем мобильное приложение для удобного прохождения реабилитации. Теперь доступ к упражнениям, врачам и прогрессу всегда под рукой.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news3.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Реабилитация с друзьями – эффективнее!</h5>
+                            <p class="text-muted">Мы добавили возможность совместных занятий. Теперь можно тренироваться с другими пациентами, поддерживать друг друга и достигать результатов быстрее!</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2 class="section-title">Советы и статьи от врачей</h2>
+        
+            <div class="row gy-4 p-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news4.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Как быстрее восстановиться после травмы?</h5>
+                            <p class="text-muted">Физиотерапевты центра делятся 5 ключевыми советами, которые помогут вам вернуться к активной жизни.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news5.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Как избежать боли и усталости после тренировки?</h5>
+                            <p class="text-muted">Наши специалисты рассказывают, какие процедуры помогают быстрее восстанавливаться и предотвращать травмы.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news6.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Что есть, чтобы быстрее восстановиться?</h5>
+                            <p class="text-muted">Диетологи центра подготовили рекомендации по питанию во время реабилитации. Узнайте, какие продукты помогут вам восстановить силы.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news7.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Мотивация – ключ к успешному восстановлению</h5>
+                            <p class="text-muted">Психологи центра объясняют, как стресс и эмоции влияют на процесс реабилитации, и делятся методами поддержки себя в сложные моменты.</p>
+                            <a href="image/news/news7.jpg" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <h2 class="section-title">Новые технологии в DRC</h2>
+        
+            <div class="row gy-4 p-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news8.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Теперь реабилитация – это игра!</h5>
+                            <p class="text-muted">В центре появились VR-программы, которые помогают быстрее восстанавливать моторику и координацию. Узнайте, как это работает.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news9.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Умные сенсоры контролируют каждое движение</h5>
+                            <p class="text-muted">Теперь ваши тренировки под контролем! IoT-устройства анализируют вашу активность, измеряют силу и корректируют программу реабилитации.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news10.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">ИИ помогает быстрее восстанавливаться!</h5>
+                            <p class="text-muted">Новая система компьютерного зрения анализирует выполнение упражнений и предлагает корректировки в реальном времени.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card media-card">
+                        <img src="image/news/news11.jpg" >
+                        <div class="card-body">
+                            <h5 class="card-title">Реабилитация теперь доступна в любом месте</h5>
+                            <p class="text-muted">Телемедицина позволяет получать консультации врачей и следить за прогрессом без посещения центра.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                                <i class="bi bi-arrow-right"></i> Читать статью
+                            </a>
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+     </div>
+
+     <div class="container mt-5">
+        <h2 class="section-title">Истории успеха пациентов</h2>
+    
+        <div class="row gy-4 p-2">
+            <div class="col-md-6 col-lg-4">
+                <div class="card media-card">
+                    <img src="image/news/news12.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Как спортсмен восстановился после тяжелой травмы?</h5>
+                        <p class="text-muted">История пациента, который благодаря Digital Rehab Center прошел путь от операции до возвращения к тренировкам.</p>
+                        <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                            <i class="bi bi-arrow-right"></i> Читать статью
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card media-card">
+                    <img src="image/news/news13.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Как Digital Rehab помог вернуть активную жизнь</h5>
+                        <p class="text-muted">После травмы колена пациент не мог нормально ходить. Узнайте, как комплексная программа реабилитации изменила его жизнь.</p>
+                        <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                            <i class="bi bi-arrow-right"></i> Читать статью
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card media-card">
+                    <img src="image/news/news14.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Как VR и физиотерапия помогли восстановиться после инсульта</h5>
+                        <p class="text-muted">Наш пациент делится своим опытом – как технологии ускорили его реабилитацию и позволили вернуть подвижность.</p>
+                        <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                            <i class="bi bi-arrow-right"></i> Читать статью
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card media-card">
+                    <img src="image/news/news15.jpg" >
+                    <div class="card-body">
+                        <h5 class="card-title">Удаленная реабилитация – это реально!</h5>
+                        <p class="text-muted">Как IoT-устройства и телемедицина помогли пациенту восстановиться без посещения центра.</p>
+                        <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                            <i class="bi bi-arrow-right"></i> Читать статью
+                        </a>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+    </div>
+ </div>
+        
+        
+
+<section id="sorry">
+    <div class="modal fade" id="modal-sorry">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>"Упс! Эта функция пока не работает 🙈 Но не переживайте, скоро всё починим. Спасибо за терпение!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+
+
+    <footer class="footer bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>О ЦЕНТРЕ</h5>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Наша команда</a></li>
+                        <li><a href="#">Наши партнеры</a></li>
+                        <li><a href="#">Технологии</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>УСЛУГИ</h5>
+                    <ul>
+                        <li><a href="#">Постоперационная реабилитация</a></li>
+                        <li><a href="#"> Реабилитация неврологических пациентов</a></li>
+                        <li><a href="#">Реабилитация после сердечно-сосудистых заболеваний</a></li>
+                        <li><a href="#">ТехнологиКак Digital Rehab помог вернуть активную жизнь                        <li><a href="#">ТехнологическПосле травмы колена пациент не мог нормально ходить. Узнайте, как комплексная программа реабилитации изменила его жизнь.<li><a href="#">Программы для профессиональных спортсменов</a></li>
+                        <li><a href="#">Дополнительные услуги для спортсменов</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ЛИЧНЫЙ КАБИНЕТ</h5>
+                    <ul>
+                        <li><a href="#">Персонализированный реабилитационный план</a></li>
+                        <li><a href="#">Контроль Как VR и физиотерапия помогли восстановиться после инсульта      <li><a href="#">Доступ к видеоурокам и упражненНаш пациент делится своим опытом – как технологии ускорили его реабилитацию и позволили вернуть подвижность    <li><a href="#">Телемедицина и онлайн-консультации</a></li>
+                        <li><a href="#">Уведомления и напоминания</a></li>
+                        <li><a href="#">Доступ к истории лечения</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>СВЯЗАТЬСЯ С НАМИ</h5>
+                    <p><strong>КОНТАКТЫ</strong></p>
+                    <p>+7 777 777 77 77</p>
+        Удаленная реабилитация – это реально!               <p><strong>ПОЧТА:</strong></p>
+                    <p>aitu@com.kz</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="https://www.instagram.com/asya.bdg?igsh=MTVnZGowdHAxbXFpMg=="><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center text-muted">
+                MCS-2301: Azamat Raissov, Assemay Bakhadir
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

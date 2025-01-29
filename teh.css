@@ -1,0 +1,204 @@
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+.search-form {
+    display: none;
+    max-width: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.search-toggle {
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+.search-container.active .search-form {
+    display: flex;
+}
+
+
+.login-btn {
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+
+@media (max-width: 768px) {
+    .search-form {
+        max-width: 150px;
+    }
+
+    .login-btn {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+
+
+.modal .row * {
+    padding-bottom: 10px;
+}
+
+.footer {
+    background-color: #E0FFFF;
+    padding: 40px 0;
+    color: #333;
+}
+
+.footer h5 {
+    color: rgb(9, 132, 240);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer ul li a:hover {
+    color: #1E88E5;
+}
+
+.footer p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.footer hr {
+    border-color: rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.footer .text-muted {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+    .footer .social-icons {
+        justify-content: center;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}  
+
+
+body {
+            scroll-behavior: smooth; 
+
+        }
+
+main {
+    background-color: #87CEFA;
+}
+
+
+.technologies-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.title-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.technologies-description {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tech-card {
+    background: #e3ecf8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tech-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.tech-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tech-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.tech-card ul li {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+.bi {
+        color: #1f4b91;
+    }

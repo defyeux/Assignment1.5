@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+
+   <div class="container-fluid" id="navbar">
+    <nav class="navbar navbar-expand-lg sticky-top p-0  shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="Logo" width="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link ms-3" href="main.html">Главная</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-3" href="main.html" role="button" data-bs-toggle="dropdown">
+                            О нас
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="main.html#about">О нас</a></li>
+                            <li><a class="dropdown-item" href="team.html">Наша команда</a></li>
+                            <li><a class="dropdown-item" href="main.html#partners">Наши партнеры</a></li>
+                            <li><a class="dropdown-item" href="teh.html">Технологии</a></li>
+                            <li><a class="dropdown-item" href="news.html">Новости</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link ms-3" href="service.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link ms-3" href="contact.html">Контакты</a></li>
+                </ul>
+
+                <div class="search-container">
+                    <form class="d-flex search-form">
+                        <input class="form-control search-input" type="search" placeholder="Поиск..." aria-label="Search">
+                         <button class="btn btn-outline-primary search-toggle">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    </form>
+                </div>
+
+                <a href="#" class="btn btn-outline-primary ms-3 login-btn" data-bs-toggle="modal" data-bs-target="#modal-sorry">
+                    <i class="bi bi-person-circle"></i> Личный кабинет
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <main>
+        <div class="container mt-4 text-center ">
+            <h2 class="team-title">Наша команда</h2>
+        </div>
+        <div class="container mt-4 d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor1.jpg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Айжан Мухамедова</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Невролог, реабилитолог</p>
+                            <p class="doctor-text"><strong>Опыт:</strong> 12 лет в восстановительной медицине</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li>Разработала уникальную программу восстановления после инсульта.</li>
+                                <li>Член Европейского общества неврологов.</li>
+                            </ul>
+                            <a href="#" class="doctor-btn" data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor2.jpg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Ержан Байжанов</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Ортопед, травматолог</p>
+                            <p class="doctor-text"><strong>Опыт:</strong> 15 лет работы с профессиональными спортсменами</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li>Работал с национальными сборными по хоккею и футболу.</li>
+                                <li>Специализируется на инновационных методах лечения суставов.</li>
+                            </ul>
+                            <a href="#" class="doctor-btn"  data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor3.jpg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Рустам Алиев</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Травматолог, хирург</p>
+                            <p class="doctor-text"><strong>Опыт:</strong> 14 лет в медицине</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li>Один из первых в Казахстане внедрил 3D-протезирование.</li>
+                                <li>Разработал методику быстрого восстановления после переломов..</li>
+                            </ul>
+                            <a href="#" class="doctor-btn"  data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor4.jpg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Данияр Жаксылыков</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Спортивный врач, реабилитолог</p>
+                            <p class="doctor-text"><strong>Опыт:</strong> 9 лет работы с профессиональными атлетами</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li>Создал реабилитационные программы для теннисистов и боксеров.</li>
+                                <li>Внедрил методики восстановления с IoT-устройствами.</li>
+                            </ul>
+                            <a href="#" class="doctor-btn"  data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor5.jpg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Толеген Ахметов</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Телемедицина, цифровая реабилитация</p>
+                            <p class="doctor-text"><strong>Опыт:</strong> 8 лет в цифровом здравоохранении</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li> Участвовал в разработке мобильного приложения для реабилитации.</li>
+                                <li>Специалист в области дистанционной диагностики.</li>
+                            </ul>
+                            <a href="#" class="doctor-btn"  data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor6.jpg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Виктория Смагулова</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Физиотерапевт
+                                Опыт: 10 лет клинической практики</p>
+                            <p class="doctor-text"><strong>Опыт:</strong>10 лет клинической практики</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li>Внедрила программу реабилитации с VR-упражнениями.</li>
+                                <li> Помогла более 500 пациентам восстановить двигательные функции.</li>
+                            </ul>
+                            <a href="#" class="doctor-btn"  data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor7.jpeg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Сауле Касымханова</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Кардиолог, реабилитолог</p>
+                            <p class="doctor-text"><strong>Опыт:</strong> 18 лет в кардиореабилитации</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li>Руководит программами реабилитации после инфарктов.</li>
+                                <li>Автор более 30 научных работ по сердечно-сосудистой реабилитации.</li>
+                            </ul>
+                            <a href="#" class="doctor-btn"  data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                    <div class="doctor-card d-flex justify-content-center">
+                        <div class="doctor-photo me-5">
+                            <img src="image/team/doctor8.jpg">
+                        </div>
+                        <div class="doctor-content">
+                            <h2 class="doctor-title">Д-р Алина Турсунова</h2>
+                            <p class="doctor-text"><strong>Специализация:</strong> Нейрофизиолог, реабилитолог</p>
+                            <p class="doctor-text"><strong>Опыт:</strong> 12 лет в восстановительной медицине</p>
+                            <p class="doctor-text"><strong>Достижения:</strong></p>
+                            <ul class="doctor-text">
+                                <li>Разработала методики реабилитации пациентов с ДЦП.</li>
+                                <li>Внедрила систему мониторинга мозговой активности во время лечения.</li>
+                            </ul>
+                            <a href="#" class="doctor-btn"  data-bs-toggle="modal" data-bs-target="#consultation">Записаться на консультацию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <section id="ourgallery" class="py-5 bg-light">
+            <div class="container">
+                <div class="team-title text-center mb-4">
+                    <h2 class="fw-bold">Our Gallery</h2>
+                </div>
+        <div id="gallery" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                            <div class="col-12 col-md-3 mb-4">
+                                <img src="image/team/gallery1.jpg" class="img-fluid rounded gallery-img"  data-bs-toggle="modal" data-bs-target="#gallery1">
+                            </div>
+        
+                            <div class="col-12 col-md-3 mb-4 d-md-block d-none">
+                                <img src="image/team/gallery2.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#gallery2">
+                            </div>
+        
+                            <div class="col-12 col-md-3 mb-4 d-md-block d-none">
+                                <img src="image/team/gallery3.jpg" class="img-fluid rounded gallery-img"  data-bs-toggle="modal" data-bs-target="#gallery3">
+                            </div>
+        
+                            <div class="col-12 col-md-3 mb-4 d-md-block d-none">
+                                <img src="image/team/gallery4.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#gallery4">
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                      
+                             <div class="col-12 col-md-3 mb-4">
+                                <img src="image/team/gallery5.jpg" class="img-fluid rounded gallery-img"  data-bs-toggle="modal" data-bs-target="#gallery5">
+                            </div>
+        
+                            <div class="col-12 col-md-3 mb-4 d-md-block d-none">
+                                <img src="image/team/gallery6.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#gallery6">
+                            </div>
+        
+                            <div class="col-12 col-md-3 mb-4 d-md-block d-none">
+                                <img src="image/team/gallery7.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#gallery7">
+                            </div>
+        
+                            <div class="col-12 col-md-3 mb-4 d-md-block d-none">
+                                <img src="image/team/gallery8.jpg" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#gallery8">
+                            </div>
+                    </div>
+                </div>
+            
+             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+            </button>
+        </div>
+
+        <div class="modal fade" id="gallery1" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery1.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="modal fade" id="gallery2" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery2.jpg" class="img-fluid rounded">
+            </div>
+        </div>    
+
+        <div class="modal fade" id="gallery3" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery3.jpg" class="img-fluid rounded">
+            </div>
+        </div>        
+
+        <div class="modal fade" id="gallery4" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery4.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="modal fade" id="gallery5" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery5.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="modal fade" id="gallery6" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery6.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="modal fade" id="gallery7" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery7.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+
+        <div class="modal fade" id="gallery8" >
+            <div class="modal-dialog modal-dialog-centered">
+                <img src="image/team/gallery8.jpg" class="img-fluid rounded">
+            </div>
+        </div>
+        </div>
+        </section>
+
+
+        <section>
+            <div class="modal" id="consultation" tabindex="-1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Отправить запрос на консультацию</h3>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4"><input type="text" class="form-control" placeholder="Фамилия"></div>
+                                <div class="col-4"><input type="text" class="form-control" placeholder="Имя"></div>
+                                <div class="col-4"><input type="text" class="form-control" placeholder="ИИН"></div>
+                                <div class="col-2"><input type="text" class="form-control" placeholder="Возраст"></div>
+                                <div class="col-4"><input type="text" class="form-control" placeholder="Номер телефона"></div>
+                                <div class="col d-flex align-items-center">
+                                    <div class="form-check form-check-inline align-items-center">
+                                        <input type="radio" class="form-check-input" name="gender">
+                                        <label class="form-check-label">Мужик</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="gender">
+                                        <label class="form-check-label">Женщина</label>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <textarea class="form-control" placeholder="Описание жалобы, диагноза"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                      <button type="button" class="btn btn-primary">Отправить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section id="sorry">
+            <div class="modal fade" id="modal-sorry">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>"Упс! Эта функция пока не работает 🙈 Но не переживайте, скоро всё починим. Спасибо за терпение!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+    </main>
+
+
+
+    <footer class="footer bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>О ЦЕНТРЕ</h5>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Наша команда</a></li>
+                        <li><a href="#">Наши партнеры</a></li>
+                        <li><a href="#">Технологии</a></li>
+                        <li><a href="#">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>УСЛУГИ</h5>
+                    <ul>
+                        <li><a href="#">Постоперационная реабилитация</a></li>
+                        <li><a href="#"> Реабилитация неврологических пациентов</a></li>
+                        <li><a href="#">Реабилитация после сердечно-сосудистых заболеваний</a></li>
+                        <li><a href="#">Технологические решения для реабилитации</a></li>
+                        <li><a href="#">Технологические решения для реабилитации</a></li>
+                        <li><a href="#">Цифровая реабилитация</a></li>
+                        <li><a href="#">Программы для профессиональных спортсменов</a></li>
+                        <li><a href="#">Дополнительные услуги для спортсменов</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>ЛИЧНЫЙ КАБИНЕТ</h5>
+                    <ul>
+                        <li><a href="#">Персонализированный реабилитационный план</a></li>
+                        <li><a href="#">Контроль прогресса</a></li>
+                        <li><a href="#">Доступ к видеоурокам и упражнениям</a></li>
+                        <li><a href="#">Интеграция с IoT-устройствами</a></li>
+                        <li><a href="#">Телемедицина и онлайн-консультации</a></li>
+                        <li><a href="#">Уведомления и напоминания</a></li>
+                        <li><a href="#">Доступ к истории лечения</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>СВЯЗАТЬСЯ С НАМИ</h5>
+                    <p><strong>КОНТАКТЫ</strong></p>
+                    <p>+7 777 777 77 77</p>
+                    <p>+7 777 777 77 77</p>
+                    <p><strong>ПОЧТА:</strong></p>
+                    <p>aitu@com.kz</p>
+                    <div class="social-icons d-flex gap-2">
+                        <a href="https://www.instagram.com/asya.bdg?igsh=MTVnZGowdHAxbXFpMg=="><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center text-muted">
+                MCS-2301: Azamat Raissov, Assemay Bakhadir
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
